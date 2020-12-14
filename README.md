@@ -2,7 +2,7 @@
 
 This image contains a all necessary to develop laravel framework
 
-- **php**: 8.0; with **xdebug** on port 9001
+- **php**: 7.4; with **xdebug** on port 9001
 - **node**: 12.x with **yarn**
 - **nginx**
 - default user: **app**
@@ -35,7 +35,7 @@ version: "3.7"
 services:
   app:
     container_name: example-app
-    image: markdomkan/laravel-bundle:php8
+    image: markdomkan/laravel-bundle:php7.4
     ports:
       - 8000:80
     volumes:
