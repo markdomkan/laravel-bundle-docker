@@ -5,7 +5,7 @@ This image contains a all necessary to develop laravel framework
 - **php**: 7.4; with **xdebug** on port 9001
 - **node**: 12.x with **yarn**
 - **nginx**
-- default user: **app**
+- default user: **app** *(nonroot user)*
 
 example of **.vscode/lauch.json** for debug:
 ```json
@@ -37,7 +37,7 @@ services:
     container_name: example-app
     image: markdomkan/laravel-bundle:php7.4
     ports:
-      - 8000:80
+      - 8000:8000
     volumes:
       - ./:/app
       # optional
